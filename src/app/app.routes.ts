@@ -5,11 +5,11 @@ import { Login } from './pages/login/login.component';
 import { PersonalComponent } from './pages/myPredictions/personal.component';
 
 export const routes: Routes = [
-  {path: '*', redirectTo: 'home'},
   {path: 'home', title: "Search NBA Player", component: HomeComponent},
   {path: 'predict', title: "Predict Next Season", component: PredictComponent},
   {path: '', title: "NBA Login", component: Login},
-  {path: 'personal-player-predictions', title: "My Predictions", component: PersonalComponent}
+  {path: 'personal-player-predictions', title: "My Predictions", component: PersonalComponent},
+  {path: '**', redirectTo: ''}
 
 
 ];
