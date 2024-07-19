@@ -6,6 +6,14 @@ Consumes [NBA stats from this API](https://github.com/nprasad2077/nbaStats) and 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 
+
+# Demo
+
+
+
+https://github.com/user-attachments/assets/74147915-dfc4-435a-9ce1-2772323d698c
+
+
 # Future Directions
 Error handling. Unit testing. Deploy.
 
