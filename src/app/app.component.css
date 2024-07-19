@@ -1,0 +1,28 @@
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-width: 100%;
+}
+
+.nav-links > * {
+  margin: .4em 0.5em .4em 0.5em;
+}
+
+.link-btn {
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+  padding: 0.7em;
+  border-radius: 10%;
+}
+
+.link-btn:hover {
+  /* padding: 1em; */
+  margin: 0 .5em 0 .5em;
+}
+
+
+
+
+

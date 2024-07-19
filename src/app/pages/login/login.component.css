@@ -1,0 +1,23 @@
+.form-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input, label {
+  display: block;
+  margin-top: .6em;
+}
+
+.submit-btn {
+  margin-top: .6em;
+  background-color: orange;
+  border: none;
+  padding: .7em;
+}
+
+.submit-btn:hover {
+  padding: 1em;
+  background-color: darkgoldenrod;
+}
+

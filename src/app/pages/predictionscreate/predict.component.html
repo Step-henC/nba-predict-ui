@@ -1,0 +1,37 @@
+<main>
+  
+
+    <div class="chart-container">
+      <canvas  id="MyChart" >{{ chart }}</canvas>
+  </div>
+ 
+ 
+<div>
+  <button (click)="makePrediction()">Predict Next Season</button>
+</div>
+<div>
+  @if (playerPrediction.id !== undefined){
+  <table>
+    <tr>
+      <th>Player Name</th>
+      <th>Last Season Pts</th>
+      <th>Predicted Points</th>
+      <th>Predicted Rebounds</th>
+      <th>Predicted Assists</th>
+    </tr>
+    <tbody>
+      <tr>
+        <td>{{ playerPrediction.playerName }}</td>
+        <td>{{ playerPrediction.lastSeasonPoints }}</td>
+        <td>{{ playerPrediction.predictedPoints}}</td>
+        <td>{{ playerPrediction.predictedRebounds }}</td>
+        <td>{{ playerPrediction.predictedAssists }}</td>
+      </tr>
+    </tbody>
+  </table>
+} @else {
+  <h4>No Data from Prediction</h4>
+}
+</div>
+</main>
+

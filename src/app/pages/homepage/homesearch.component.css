@@ -1,0 +1,40 @@
+.link-btn {
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+  padding: 0.7em;
+  border-radius: 10%;
+  margin: 1em;
+}
+
+.link-btn:hover {
+  padding: 1em;
+}
+
+.btn-div {
+  display: flex;
+  justify-items: start;
+  flex-direction: row;
+  margin-top: 2em;
+}
+
+input, label {
+  display: block;
+}
+
+.btn-primary {
+  border: none;
+  background-color: orange;
+  padding: 0.3em;
+  border-radius: 10%;
+  margin: .5em 0 .5em 0;
+}
+
+.btn-primary:hover {
+  padding: .4em;
+  margin: 0;
+}
+
+input, button {
+  display: inline-block;
+}

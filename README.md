@@ -1,6 +1,13 @@
-# NbaStatsApp
+# NBA Predict UI
+
+Consumes [NBA stats from this API](https://github.com/nprasad2077/nbaStats) and communicates with java backend
+[here](https://github.com/Step-henC/nba-stats-ui) to perform linear regression in backend and predict a player's performance for next season. Ideal for fantasy drafts or betting.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+
+# Future Directions
+Error handling. Unit testing. Deploy.
 
 ## Development server
 

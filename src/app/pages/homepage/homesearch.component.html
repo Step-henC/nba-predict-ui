@@ -1,0 +1,58 @@
+<main>
+  <h2>{{ title }}</h2>
+  <div>
+    <div>
+      <label for="seachPlayerCareer"
+        >Search Player</label
+      >
+
+      <input
+        #playerName
+        placeholder="enter player name"
+        (keyup.enter)="searchPlayer(playerName.value); playerName.value = ''"
+        class="lg-text-input"
+        id="searchPlayerCareer"
+      />
+
+      <button class="btn-primary" (click)="searchPlayer(playerName.value)">
+        Search
+      </button>
+      <h2>{{ playerName.value }}</h2>
+    </div>
+    <table>
+      <tr>
+        <th>Player Name</th>
+        <th>Team</th>
+        <th>Season</th>
+        <th>Total Points</th>
+        <th>Total Rebounds</th>
+        <th>Total Assists</th>
+      </tr>
+
+      <tbody>
+        @for (year of playerCareer; track year.season){
+        <tr>
+          <td>{{ year.playerName }}</td>
+          <td>{{ year.team }}</td>
+          <td>{{ year.season }}</td>
+          <td>{{ year.points }}</td>
+          <td>{{ year.totalRb }}</td>
+          <td>{{ year.assists }}</td>
+        </tr>
+        } @empty {
+        <tr>
+          <td>No Data Yet</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <!-- @if(playerCareer.length > 0){ -->
+   <div class="btn-div">
+
+   
+      <a class='link-btn' routerLink="/predict">Predict Next Season For Player</a>
+    </div>
+ <!-- } -->
+ 
+</main>

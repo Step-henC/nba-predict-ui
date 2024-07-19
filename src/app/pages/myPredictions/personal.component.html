@@ -1,0 +1,33 @@
+<main>
+  <div>
+    @if (personalPlayerPredictionList.length !== 0 ){
+    <table>
+      <tr>
+        <th>Player Name</th>
+        <th>Last Season Pts</th>
+        <th>Predicted Points</th>
+        <th>Predicted Rebounds</th>
+        <th>Predicted Assists</th>
+      </tr>
+
+      <tbody>
+        @for (player of personalPlayerPredictionList; track player.id){
+        <tr>
+          <td>{{ player.playerName }}</td>
+          <td>{{ player.lastSeasonPoints }}</td>
+          <td>{{ player.predictedPoints }}</td>
+          <td>{{ player.predictedRebounds }}</td>
+          <td>{{ player.predictedAssists }}</td>
+        </tr>
+        } @empty {
+        <tr>
+          <td>No Data Yet</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  } @else {
+    <h4> No Data Yet. Please login</h4>
+  }
+  </div>
+</main>
