@@ -1,11 +1,9 @@
-<main class="main-content">
-  <div>
-    <h1>NBA Stats Prediction</h1>
-  </div>
-  <div class="nav-links">
-    <a id="first-link" class="link-btn" routerLink="">Login</a>
-    <a id="sec-link" class='link-btn' routerLink="/home">Search Player</a>
-    <a id="final-link" class='link-btn' routerLink="/personal-player-predictions">My Predictions</a>
-  </div>
-</main>
-<router-outlet></router-outlet>
+
+<predict-header [label]="label" [links]="links">
+</predict-header>
+<h1>NBA Prediction</h1>
+<home-root></home-root>
+<div class="search-history">
+</div>
+<predict-table></predict-table>
+

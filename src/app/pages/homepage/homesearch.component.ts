@@ -2,11 +2,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { PlayerService } from '../../services/player.service';
+import { PredictComponent } from '../predictionscreate/predict.component';
 
 @Component({
   selector: 'home-root',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule, RouterLink],
+  imports: [RouterOutlet, HttpClientModule, RouterLink, PredictComponent],
   templateUrl: './homesearch.component.html',
   styleUrl: './homesearch.component.css'
 })

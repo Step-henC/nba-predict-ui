@@ -34,7 +34,6 @@ export class PredictComponent {
   loading: boolean = true;
 
   ngOnInit(): void {
-    this.userService.user.subscribe(cred => this.user = cred)
     this.playserService.playerTotals.subscribe(stats => this.playerCareer = stats);
     this.createChart()
   }

@@ -1,0 +1,10 @@
+.nxt-szn-btn {
+  background-color: orange;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 10px;
+
+}
+.nxt-szn-btn:hover {
+  opacity: 0.6;
+}

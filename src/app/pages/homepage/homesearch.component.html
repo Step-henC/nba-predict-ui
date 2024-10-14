@@ -3,7 +3,7 @@
   <div>
     <div>
       <label for="seachPlayerCareer"
-        >Search Player</label
+        >Search Active Player</label
       >
 
       <input
@@ -48,9 +48,10 @@
     </table>
   </div>
   @if(playerCareer.length > 0){
-   <div class="btn-div">
-      <a class='link-btn' routerLink="/predict">Predict Next Season For Player</a>
-    </div>
+   <!-- <div class="btn-div">
+      <a class='link-btn' href="/predict">Predict Next Season For Player</a>
+    </div> -->
+    <predict-root />
  }
  
 </main>

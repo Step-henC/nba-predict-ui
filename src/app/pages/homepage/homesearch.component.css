@@ -25,14 +25,13 @@ input, label {
 .btn-primary {
   border: none;
   background-color: orange;
-  padding: 0.3em;
-  border-radius: 10%;
-  margin: .5em 0 .5em 0;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px;
 }
 
 .btn-primary:hover {
-  padding: .4em;
-  margin: 0;
+  opacity: 0.6;
 }
 
 input, button {

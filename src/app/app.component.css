@@ -1,25 +1,24 @@
-.nav-links {
+
+
+.player-input {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  min-width: 100%;
+  margin: 3px;
 }
 
-.nav-links > * {
-  margin: .4em 0.5em .4em 0.5em;
-}
-
-.link-btn {
-  text-decoration: none;
-  color: black;
+.sbmt-btn {
+  border-radius: 10px;
   background-color: orange;
-  padding: 0.7em;
-  border-radius: 10%;
+  padding: 10px;
+  margin: 9px;
+  border: none;
 }
 
-.link-btn:hover {
-  /* padding: 1em; */
-  margin: 0 .5em 0 .5em;
+.sbmt-btn:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 
