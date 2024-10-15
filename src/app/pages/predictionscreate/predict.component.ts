@@ -9,8 +9,6 @@ import { UserService } from "../../services/user.service";
 
 @Component({
   selector: 'predict-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink],
   templateUrl: './predict.component.html',
   styleUrl: './predict.component.css'
 })

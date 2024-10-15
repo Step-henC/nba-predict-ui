@@ -10,6 +10,4 @@ export const routes: Routes = [
   {path: 'personal-player-predictions', title: "My Predictions", component: PersonalComponent},
   {path: '', title: "Search Player", component: AppComponent},
   {path: '**', redirectTo: ''}
-
-
 ];

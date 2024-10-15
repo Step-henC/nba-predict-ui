@@ -5,15 +5,20 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserModule } from "@angular/platform-browser";
 import { PredictionsComponentLibraryModule } from "predictions-component-library";
 import { HomeComponent } from "./pages/homepage/homesearch.component";
+import { PredictComponent } from "./pages/predictionscreate/predict.component";
+import { AppRoutingModule } from "./app-routing.module";
 
 
 
 @NgModule({
   declarations: [
   AppComponent,
+  PredictComponent,
+  HomeComponent,
+
   ],
   providers: [],
-  imports: [RouterOutlet, RouterModule, BrowserModule, HttpClientModule, PredictionsComponentLibraryModule, HomeComponent],
+  imports: [BrowserModule, AppRoutingModule, PredictionsComponentLibraryModule],
    bootstrap: [AppComponent]
 })
 
