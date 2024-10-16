@@ -1,6 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +12,7 @@ export class AppComponent {
 @Input() playerName = ''
 label = "Heron Sports"
 
-links =  [{href: '/predict', label: "NBA"}, {href: "/wnba", label: "WNBA"}]
+links =  [{href:"/",label: "Home" },{href: '/predict', label: "NBA"}, {href: "/wnba", label: "WNBA"}]
 
 onSearch() {
 this.playerSearchHistory.push(this.playerName)

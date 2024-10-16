@@ -1,3 +1,4 @@
+<predict-spinner [isLoading]="isLoading"></predict-spinner>
 <main>
   <h2>{{ title }}</h2>
   <div>
@@ -14,9 +15,7 @@
         id="searchPlayerCareer"
       />
 
-      <button class="btn-primary" (click)="searchPlayer(playerName.value)">
-        Search
-      </button>
+      <predict-button [label]="buttonLabel" (handleClick)="searchPlayer(playerName.value)" [disabled]="isLoading"/>
       <h2>{{ playerName.value }}</h2>
     </div>
     <table>
@@ -48,10 +47,10 @@
     </table>
   </div>
   @if(playerCareer.length > 0){
+    <predict-root></predict-root>
    <!-- <div class="btn-div">
-      <a class='link-btn' href="/predict">Predict Next Season For Player</a>
+      <button (click)="predictClick()" class="btn-primary">Predict Next Season For Player</button>
     </div> -->
-    <predict-root />
  }
  
 </main>
