@@ -1,11 +1,16 @@
 <predict-spinner [isLoading]="isLoading"></predict-spinner>
 <main>
+  @if(showAlert) {
+  <predict-toast
+    [timeout]="alertModel.timeout"
+    [status]="alertModel.status"
+    [message]="alertModel.message"
+  ></predict-toast>
+  }
   <h2>{{ title }}</h2>
   <div>
     <div>
-      <label for="seachPlayerCareer"
-        >Search Active Player</label
-      >
+      <label for="seachPlayerCareer">Search Active Player</label>
 
       <input
         #playerName
@@ -15,42 +20,20 @@
         id="searchPlayerCareer"
       />
 
-      <predict-button [label]="buttonLabel" (handleClick)="searchPlayer(playerName.value)" [disabled]="isLoading"/>
+      <predict-button
+        [label]="buttonLabel"
+        (handleClick)="searchPlayer(playerName.value)"
+        [disabled]="isLoading"
+      />
       <h2>{{ playerName.value }}</h2>
     </div>
-    <table>
-      <tr>
-        <th>Player Name</th>
-        <th>Team</th>
-        <th>Season</th>
-        <th>Total Points</th>
-        <th>Total Rebounds</th>
-        <th>Total Assists</th>
-      </tr>
-
-      <tbody>
-        @for (year of playerCareer; track year.season){
-        <tr>
-          <td>{{ year.playerName }}</td>
-          <td>{{ year.team }}</td>
-          <td>{{ year.season }}</td>
-          <td>{{ year.points }}</td>
-          <td>{{ year.totalRb }}</td>
-          <td>{{ year.assists }}</td>
-        </tr>
-        } @empty {
-        <tr>
-          <td>No Data Yet</td>
-        </tr>
-        }
-      </tbody>
-    </table>
+    <predict-table
+      [tableData]="playerCareer"
+      [columns]="predictedStatCols"
+      [noDataMessage]="'No Player Data'"
+    />
   </div>
   @if(playerCareer.length > 0){
-    <predict-root></predict-root>
-   <!-- <div class="btn-div">
-      <button (click)="predictClick()" class="btn-primary">Predict Next Season For Player</button>
-    </div> -->
- }
- 
+  <predict-root></predict-root>
+  }
 </main>

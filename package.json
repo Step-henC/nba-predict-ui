@@ -1,6 +1,6 @@
 {
-  "name": "nba-stats-app",
-  "version": "0.0.0",
+  "name": "predict-stats-ui",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "chart.js": "^4.4.3",
-    "predictions-component-library": "1.0.0",
+    "predictions-component-library": "1.1.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
