@@ -32,8 +32,8 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run build:prod
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/nba-stats-app s3://predict-stats-ui
+        run: aws s3 sync ./dist/nba-stats-app/browser s3://predict-stats-ui
