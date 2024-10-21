@@ -36,4 +36,4 @@ jobs:
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/nba-stats-app http://predict-stats-ui.s3-website-us-east-1.amazonaws.com
+        run: aws s3 sync ./dist/nba-stats-app s3://predict-stats-ui
